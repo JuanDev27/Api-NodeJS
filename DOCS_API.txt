@@ -1,0 +1,26 @@
+GET -> localhost:3700/api/home (Probar para ver un listado de Videojuegos) Status:200 OK
+POST -> localhost:3700/api/save (Agregar un videojuego)
+ESTRUCTURA:
+{
+    "name": "Mario Kart 8",
+    "description": "Videojuego de carreras",
+    "category": "Carreras",
+    "year": 2017,
+    "studio": "Nintendo"
+  }
+
+GET -> localhost:3700/api/videojuego/:id (Ver un videojuego)<->(Donde :id es el id de la base de datos, EJ: ../videojuego/68de916ddd0705ea763a4430)
+PUT -> localhost:3700/api/videojuego/:id (Actualizar un elemento)
+ESTRUCTURA:
+{
+    "name": "Mario Kart 8",
+    "description": "Videojuego de carreras",
+    "category": "Carreras",
+    "year": 2017,
+    "studio": "Nintendo",
+    ...	
+  }
+
+NOTA:Solo puede actualizar los valores de campos ya existentes, no agregar más campos.
+
+DELETE -> localhost:3700/api/videojuego/:id (Borrar un elemento)
